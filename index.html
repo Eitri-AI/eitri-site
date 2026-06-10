@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eitri AI — From Molecule to Medicine</title>
+  <meta name="description" content="Eitri AI is transforming the path from molecule to medicine with agentic AI for biopharma manufacturing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Hepta+Slab:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* ---- Header ---- */
+    .header {
+      background: #fff;
+      padding: 1.25rem 2.5rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Hepta Slab', serif;
+      font-weight: 700;
+      font-size: 1.35rem;
+      color: #111;
+      letter-spacing: 0.02em;
+    }
+
+    /* ---- Hero / Main ---- */
+    .hero {
+      flex: 1;
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 2rem;
+      gap: 2.5rem;
+    }
+
+    .hero h1 {
+      color: #fff;
+      font-family: 'Barlow', sans-serif;
+      font-weight: 500;
+      font-size: clamp(1.5rem, 4vw, 2.4rem);
+      line-height: 1.35;
+      max-width: 600px;
+    }
+
+    /* Waitlist form */
+    .waitlist-form {
+      display: flex;
+      gap: 0;
+      max-width: 460px;
+      width: 100%;
+    }
+
+    .waitlist-form input[type="email"] {
+      flex: 1;
+      padding: 0.85rem 1.1rem;
+      font-size: 0.95rem;
+      font-family: 'Inter', sans-serif;
+      border: 1px solid #333;
+      border-right: none;
+      background: #111;
+      color: #fff;
+      outline: none;
+      border-radius: 0;
+    }
+
+    .waitlist-form input[type="email"]::placeholder {
+      color: #777;
+    }
+
+    .waitlist-form input[type="email"]:focus {
+      border-color: #555;
+    }
+
+    .waitlist-form button {
+      padding: 0.85rem 1.5rem;
+      font-size: 0.95rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      background: #8EB5DC;
+      color: #000;
+      border: 1px solid #8EB5DC;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .waitlist-form button:hover {
+      background: #7AA3CA;
+    }
+
+    .btn-book {
+      display: inline-block;
+      padding: 0.85rem 2rem;
+      font-size: 0.95rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      color: #000;
+      border: 1px solid #8EB5DC;
+      background: #8EB5DC;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .btn-book:hover {
+      background: #7AA3CA;
+      border-color: #7AA3CA;
+    }
+
+    /* ---- Footer ---- */
+    .footer {
+      background: #fff;
+      padding: 1.25rem 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    /* ---- Mobile ---- */
+    @media (max-width: 520px) {
+      .header, .footer {
+        padding: 1rem 1.5rem;
+      }
+
+      .hero {
+        padding: 3rem 1.5rem;
+        gap: 2rem;
+      }
+
+      .waitlist-form {
+        flex-direction: column;
+      }
+
+      .waitlist-form input[type="email"] {
+        border-right: 1px solid #333;
+        border-bottom: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <span class="logo">EITRI AI</span>
+  </header>
+
+  <main class="hero">
+    <h1>Transforming the path from molecule to medicine</h1>
+
+    <form class="waitlist-form" action="https://formspree.io/f/xwvjqgyp" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Join the Waitlist</button>
+    </form>
+
+    <a href="https://calendar.app.google/p5rsDEw8biY5Ps499" class="btn-book" target="_blank" rel="noopener">
+      Book an Intro
+    </a>
+  </main>
+
+  <footer class="footer">
+    <span class="logo">EITRI AI</span>
+  </footer>
+
+</body>
+</html>
